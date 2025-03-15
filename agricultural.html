@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AGRICULTURE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header, footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    .language-selector-container {
+        text-align: right;
+        padding: 5px;
+    }
+    main {
+        padding: 20px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    /* Card Layout */
+    .scheme-cards {
+        display: flex;
+        flex-wrap: wrap; /* Enable wrapping for multiple rows */
+        gap: 20px; /* Space between cards */
+        justify-content: space-around; /* Center cards on the row */
+    }
+    .card {
+        width: 35%; /* Increased the width of the card */
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    }
+    .card:hover {
+        transform: translateY(-5px); /* Slight upward movement */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+    .card h3 {
+        background-color: #28a745; /* Green background for card headers */
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+    .card p {
+        padding: 15px;
+        color: #555;
+        margin: 0;
+    }
+    button {
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        border: none;
+        background-color: #007bff; /* Bootstrap primary color */
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    button:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+    .card {
+    float: left;
+    margin-right: 20px;
+}
+
+.card {
+    float: right;
+    margin-left: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <h1 class="translator-text" data-en="Agriculture Scheme" data-ta="விவசாயம் திட்டம்">Agriculture Scheme </h1>
+    <nav>
+      <div class="language-selector-container">
+        <i class="bi bi-translate"></i>
+        <label for="language-selector" data-en="Language:" data-ta="மொழி:">Language:</label>
+        <select id="language-selector">
+          <option value="en">English</option>
+          <option value="ta">தமிழ்</option>
+        </select>
+      </div>
+      <ul>
+        <li><a href="scheme.html" data-en="Home" data-ta="முகப்பு">Home</a></li>
+        <li><a href="#schemes" data-en="Schemes" data-ta="திட்டங்கள்">Schemes</a></li>
+        <li><a href="#about" data-en="About" data-ta="எங்களை பற்றி">About</a></li>
+        <li><a href="#contact" data-en="Contact" data-ta="தொடர்பு">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Schemes Section -->
+  <section id="schemes">
+    <div class="container">
+      <h2 data-en="Featured Schemes" data-ta="பிரபலமான திட்டங்கள்">Featured Schemes</h2>
+      <div class="scheme-cards">
+        <div class="card">
+          <h3 data-en="Scheme 1:Horticulture " data-ta="திட்டம் 1:தோட்டக்கலை ">Scheme 1:Horticulture</h3>
+          <p data-en="This scheme aims to provide financial support to farmers through loans for horticulture purposes. " data-ta="இந்த திட்டம் தோட்டக்கலை நோக்கங்களுக்காக விவசாயிகளுக்கு கடன் மூலம் நிதியுதவி வழங்குவதை நோக்கமாகக் கொண்டுள்ளது ">This scheme aims to provide financial support to farmers through loans for horticulture purposes.</p>
+          <button onclick="window.location.href='file:///C:/wamp64/www/pageone.html';" data-en="Learn More" data-ta="மேலும் அறிய">Learn More</button>
+        </div>
+        <div class="card">
+          <h3 data-en="Scheme 2:Minor Irrigation" data-ta="திட்டம் 2: சிறு பாசனத்திற்காக
+">Scheme 2:Minor Irrigation </h3>
+          <p data-en="This scheme aims to provide financial assistance to farmers through loans intended for minor irrigation projects." data-ta="இந்த திட்டம் சிறு நீர்ப்பாசனத் திட்டங்களுக்காக விவசாயிகளுக்கு கடன் மூலம் நிதி உதவி வழங்குவதை நோக்கமாகக் கொண்டுள்ளது.  ">This scheme aims to provide financial assistance to farmers through loans intended for minor irrigation projects.</p>
+          <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">Learn More</button>
+        </div>
+        <div class="card">
+          <h3 data-en="Scheme 3: Animal Husbandry" data-ta="திட்டம் 3:கால்நடை பராமரிப்பு ">Scheme 3: Animal Husbandry</h3>
+          <p data-en="this scheme aims to provide financial support to farmers specifically for animal husbandry activitie ." data-ta="இந்த திட்டம் கால்நடை வளர்ப்பு நடவடிக்கைகளுக்கு விவசாயிகளுக்கு நிதியுதவி வழங்குவதை நோக்கமாகக் கொண்டுள்ளது. ">this scheme aims to provide financial support to farmers specifically for animal husbandry activitie.</p>
+          <button onclick="window.location.href='https://example.com/health-insurance-details';" data-en="Learn More" data-ta="மேலும் அறிய">Learn More</button>
+        </div>
+        <div class="card" style="float: left; margin-right: 20px;">
+          <h3 data-en="Scheme 4: Tractor Purchase" data-ta="திட்டம் 4:டிராக்டர் வாங்குவதற்கு ">Scheme 4:Tractor Purchase</h3>
+          <p data-en="This scheme aims to provide financial assistance for acquiring tractors, covering up to 90% of the tractor's cost ." data-ta="இந்த திட்டம் டிராக்டர்களை வாங்குவதற்கு நிதி உதவி வழங்குவதை நோக்கமாகக் கொண்டுள்ளது, இது டிராக்டரின் விலையில் 90% வரை ஈடுகட்டுகிறது.">
+              This scheme aims to provide financial assistance for acquiring tractors, covering up to 90% of the tractor's cost. 
+          </p>
+          <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+              Learn More
+          </button>
+      </div>
+      <div class="card" style="float: right; margin-left: 20px;">
+        <h3 data-en="Scheme 5: Sericulture In Irrigated Area." data-ta="திட்டம் 5:நீர்ப்பாசனப் பகுதியில் பட்டு வளர்ப்புத் துறைக்கு ">Scheme 5:  Sericulture In Irrigated Area.</h3>
+        <p data-en="This scheme aims to support farmers involved in sericulture within irrigated areas by offering loans ranging from ₹49,000/- to ₹79,000/- per acre. " data-ta="இந்த திட்டம் நீர்ப்பாசனப் பகுதிகளில் பட்டுப்புழு வளர்ப்பில் ஈடுபட்டுள்ள விவசாயிகளுக்கு ஏக்கருக்கு ₹49,000/- முதல் ₹79,000/- வரை கடன்களை வழங்குவதன் மூலம் ஆதரவளிப்பதை நோக்கமாகக் கொண்டுள்ளது. ">
+            This scheme aims to support farmers involved in sericulture within irrigated areas by offering loans ranging from ₹49,000/- to ₹79,000/- per acre. 
+        </p>
+        <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+            Learn More
+        </button>
+    </div>
+    <div class="card" style="float: left; margin-right: 20px;">
+      <h3 data-en="Scheme 6:Seed Multiplication Scheme " data-ta="திட்டம் 6:விதை பெருக்கல் திட்டம்.  ">Scheme 6:Seed Multiplication Scheme</h3>
+      <p data-en="This scheme offers subsidies to farmers to produce seeds under contract with the Department of Agriculture ." data-ta=" இந்த திட்டம் வேளாண் துறையுடன் ஒப்பந்தத்தின் கீழ் விதைகளை உற்பத்தி செய்ய விவசாயிகளுக்கு மானியம் வழங்குகிறது. ">
+          This scheme offers subsidies to farmers to produce seeds under contract with the Department of Agriculture
+      </p>
+      <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+          Learn More
+      </button>
+  </div>
+  <div class="card" style="float: right; margin-left: 20px;">
+    <h3 data-en="Scheme 7:Rain Water Harvesting and Runoff Management Programme
+ " data-ta="திட்டம் 7: மழை நீர் சேகரிப்பு மற்றும் ஓடை மேலாண்மை திட்டம்
+">Scheme 7:Rain Water Harvesting and Runoff Management Programme
+</h3>
+    <p data-en="This scheme aims to promote water harvesting and efficient use of rainwater in rural areas ." data-ta="இந்த திட்டம் கிராமப்புறங்களில் நீர் சேகரிப்பு மற்றும் மழைநீரை திறமையாக பயன்படுத்துவதை மேம்படுத்துவதை நோக்கமாகக் கொண்டுள்ளது .">
+        This scheme aims to promote water harvesting and efficient use of rainwater in rural areas. 
+    </p>
+    <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+        Learn More
+    </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+  <h3 data-en="Scheme 8: NABARD assisted Rain Water Harvesting Programme" data-ta="திட்டம் 8: நபார்டு உதவியுடன் மழை நீர் சேகரிப்பு திட்டம்
+">Scheme 8: NABARD assisted Rain Water Harvesting Programme</h3>
+  <p data-en="This scheme aims to promote rainwater harvesting and efficient water use in rural areas " data-ta="இந்த திட்டம் கிராமப்புறங்களில் மழைநீர் சேகரிப்பு மற்றும் திறமையான நீர் பயன்பாட்டை மேம்படுத்துவதை நோக்கமாகக் கொண்டுள்ளது .">
+      This scheme aims to promote rainwater harvesting and efficient water use in rural areas  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: right; margin-left: 20px;">
+  <h3 data-en="Scheme 9: Minor Irrigation Scheme" data-ta="திட்டம் 9: சிறு நீர்ப்பாசனத் திட்டம்
+">Scheme 9: Minor Irrigation Scheme</h3>
+  <p data-en="This scheme aims to provide irrigation facilities to small and marginal farmers through construction of minor irrigation projects ." data-ta="இந்த திட்டம் சிறு மற்றும் குறு விவசாயிகளுக்கு சிறு நீர்ப்பாசனத் திட்டங்களைக் கட்டுவதன் மூலம் நீர்ப்பாசன வசதிகளை வழங்குவதை நோக்கமாகக் கொண்டுள்ளது. ">
+      This scheme aims to provide irrigation facilities to small and marginal farmers through construction of minor irrigation projects. 
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+<h3 data-en="Scheme 10: Land Development Scheme area of operation
+" data-ta="திட்டம் 10: நில மேம்பாட்டுத் திட்டம் செயல்படும் பகுதி
+">Scheme 10: Land Development Scheme area of operation
+</h3>
+<p data-en="This scheme aims to bring barren and uncultivated land under cultivation, increasing agricultural productivity and farmers' income. " data-ta="இந்த திட்டம் தரிசு மற்றும் பயிரிடப்படாத நிலங்களை சாகுபடிக்கு கொண்டு வந்து, விவசாய உற்பத்தி மற்றும் விவசாயிகளின் வருவாயை அதிகரிப்பது இத்திட்டத்தின் நோக்கமாகும்.">
+    This scheme aims to bring barren and uncultivated land under cultivation, increasing agricultural productivity and farmers' income.
+</p>
+<button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+    Learn More
+</button>
+</div>
+<div class="card" style="float: right; margin-left: 20px;">
+  <h3 data-en="Scheme 11: World Bank-aided Tamil Nadu Irrigated Agricultural Modernization Project" data-ta="திட்டம் 11:உலக வங்கி உதவி பெறும் தமிழ்நாடு நீர்ப்பாசன வேளாண்மை நவீனமயமாக்கல் திட்டம்  ">Scheme 11: World Bank-aided Tamil Nadu Irrigated Agricultural Modernization Project</h3>
+  <p data-en="This scheme aims to promote climate-resilient agriculture technologies, improve water management practices, and increase market opportunities for small and marginal farmers . " data-ta="இந்த திட்டம் தொழில்நுட்பங்களை மேம்படுத்துதல், நீர் மேலாண்மை நடைமுறைகளை மேம்படுத்துதல் மற்றும் சிறு மற்றும் குறு விவசாயிகளுக்கான சந்தை வாய்ப்புகளை அதிகரிப்பதை நோக்கமாகக் கொண்டுள்ளது. .">
+      This scheme aims to promote climate-resilient agriculture technologies, improve water management practices, and increase market opportunities for small and marginal farmers .
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+<h3 data-en="Scheme 12:The Pradhan Mantri Krishi Sinchayee Yojana  " data-ta="திட்டம் 12: பிரதான் மந்திரி க்ரிஷி சிஞ்சாயி யோஜனா">Scheme 12: The Pradhan Mantri Krishi Sinchayee Yojana </h3>
+<p data-en="This scheme aims to enhance physical access of water on farms, expand cultivable area under assured irrigation, and improve on-farm water use efficiency ." data-ta="இந்த திட்டம் பண்ணைகளில் தண்ணீர் வசதியை மேம்படுத்துதல், உறுதி செய்யப்பட்ட நீர்ப்பாசனத்தின் கீழ் சாகுபடிப் பரப்பை விரிவுபடுத்துதல் மற்றும் பண்ணையில் நீர் பயன்பாட்டுத் திறனை மேம்படுத்துதல் ஆகியவற்றை நோக்கமாகக் கொண்டுள்ளது ">
+    This scheme aims to enhance physical access of water on farms, expand cultivable area under assured irrigation, and improve on-farm water use efficiency . </p>
+<button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+    Learn More
+</button>
+</div>
+<div class="card" style="float: right; margin-left: 20px;">
+  <h3 data-en="Scheme 13:farm ponds to catch rainwater in farm lands
+ " data-ta="திட்டம் 13: விவசாய நிலங்களில் மழைநீரைப் பிடிக்க பண்ணைக் குட்டைகள்
+">Scheme 13:farm ponds to catch rainwater in farm lands:
+</h3>
+  <p data-en="This scheme aims to harvest and conserve rainwater for irrigation purposes, reducing dependence on groundwate." data-ta="இந்த திட்டம் நிலத்தடி நீரை நம்பியிருப்பதைக் குறைத்து, பாசன நோக்கங்களுக்காக மழைநீரை அறுவடை செய்து சேமிப்பதை நோக்கமாகக் கொண்டுள்ளது. ">
+      This scheme aims to harvest and conserve rainwater for irrigation purposes, reducing dependence on groundwate.
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+<h3 data-en="Scheme 14: providing electric motor pumpsets to farmers with  subsidy
+" data-ta="திட்டம் 14: விவசாயிகளுக்கு மின் மோட்டார் பம்ப்செட்களை மானியத்துடன் வழங்குதல்
+">Scheme 14:providing electric motor pumpsets to farmers with  subsidy
+</h3>
+<p data-en="This scheme aims to promote efficient irrigation practices by providing subsidized electric motor pumpsets to farmers. " data-ta="இந்த திட்டம் விவசாயிகளுக்கு மானிய விலையில் மின்சார மோட்டார் பம்ப்செட்களை வழங்குவதன் மூலம் திறமையான நீர்ப்பாசன நடைமுறைகளை மேம்படுத்துவதை நோக்கமாகக் கொண்டுள்ளது.">
+    This scheme aims to promote efficient irrigation practices by providing subsidized electric motor pumpsets to farmers. 
+</p>
+<button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+    Learn More
+</button>
+</div><div class="card" style="float: right; margin-left: 20px;">
+        <h3 data-en="Scheme 15: the Land Development scheme
+" data-ta="திட்டம் 15:நில மேம்பாட்டுத் திட்டம் ">Scheme 15: the Land Development scheme
+</h3>
+        <p data-en="This scheme to improve the productivity of land by providing financial assistance to farmers for land development activities." data-ta="இந்த திட்டம் விவசாயிகளுக்கு நில மேம்பாட்டு நடவடிக்கைகளுக்கு நிதி உதவி வழங்குவதன் மூலம் நிலத்தின் உற்பத்தித்திறனை மேம்படுத்துவதை நோக்கமாகக் கொண்டுள்ளது">
+            This scheme to improve the productivity of land by providing financial assistance to farmers for land development activities.
+        </p>
+        <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+            Learn More
+        </button>
+    </div>
+    <div class="card" style="float: left; margin-right: 20px;">
+      <h3 data-en="Scheme 16:the Sub Mission on Agricultural Mechanization " data-ta="திட்டம் 16: விவசாய இயந்திரமயமாக்கலின் துணைப் பணி ">Scheme 16: the Sub Mission on Agricultural Mechanization</h3>
+      <p data-en="This scheme aims to promote mechanization in agriculture, increasing efficiency and productivity." data-ta="இந்த திட்டம் விவசாயத்தில் இயந்திரமயமாக்கலை ஊக்குவிப்பது, செயல்திறன் மற்றும் உற்பத்தித்திறனை அதிகரிப்பதை நோக்கமாகக் கொண்டுள்ளது ">
+          This scheme aims to promote mechanization in agriculture, increasing efficiency and productivity
+      </p>
+      <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+          Learn More
+      </button>
+  </div>
+  <div class="card" style="float: right; margin-left: 20px;">
+    <h3 data-en="Scheme 17:Establishment of Sugarcane-Based Custom Hiring Centers
+ " data-ta="திட்டம் 17:கரும்பு அடிப்படையிலான தனிப்பயன் பணியமர்த்தல் மையங்களை நிறுவுதல் ">Scheme 17: Establishment of Sugarcane-Based Custom Hiring Centers
+</h3>
+    <p data-en="This scheme aims to promote mechanization in sugarcane farming, reducing labor costs and increasing efficiency ." data-ta="இந்த திட்டம் தொழிலாளர் செலவைக் குறைப்பது மற்றும் செயல்திறனை அதிகரிப்பது ஆகியவற்றை கரும்பு அடிப்படையிலான தனிப்பயன் பணியமர்த்தல் மையங்களை நிறுவுதல் திட்டம் நோக்கமாக உள்ளது .">
+        This scheme aims to promote mechanization in sugarcane farming, reducing labor costs and increasing efficiency. 
+    </p>
+    <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+        Learn More
+    </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+  <h3 data-en="Scheme 18:Chief Minister's Scheme of Solar Powered Pumpsets 
+" data-ta="திட்டம் 18:சூரிய சக்தியில் இயங்கும் பம்ப்செட்களின் முதலமைச்சரின் திட்டம்
+ ">Scheme 18: Chief Minister's Scheme of Solar Powered Pumpsets 
+</h3>
+  <p data-en="This scheme aims to provide standalone solar-powered pumpsets to farmers with a 70% subsidy." data-ta="இந்த திட்டம் விவசாயிகளுக்கு 70% மானியத்துடன் சூரிய சக்தியில் இயங்கும் பம்ப்செட்களை வழங்குவதை நோக்கமாகக் கொண்டுள்ளது .">
+      This scheme aims to provide standalone solar-powered pumpsets to farmers with a 70% subsidy.
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: right; margin-left: 20px;">
+  <h3 data-en="Scheme 19: Installation of Solar Fencing Units schemes" data-ta="திட்டம் 19: சோலார் ஃபென்சிங் யூனிட்களை நிறுவுதல்">Scheme 19: Installation of Solar Fencing Units schemes
+</h3>
+  <p data-en="This scheme aims to protect crops from wild animals and stray cattle using solar-powered fencing ." data-ta="இந்த திட்டம் சூரிய சக்தியில் இயங்கும் வேலிகளைப் பயன்படுத்தி காட்டு விலங்குகள் மற்றும் தெரு கால்நடைகளிடமிருந்து பயிர்களைப் பாதுகாப்பதை நோக்கமாகக் கொண்டுள்ளது.  ">
+      This scheme aims to protect crops from wild animals and stray cattle using solar-powered fencing
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+<h3 data-en="Scheme 20:The National Food Security Mission Pulses
+ " data-ta="திட்டம் 20: தேசிய உணவுப் பாதுகாப்புத் பருப்பு வகைகள் திட்டம் 
+">Scheme 20: The National Food Security Mission Pulses
+</h3>
+<p data-en="This scheme aims to increase pulse production and productivity, enhancing food security and farmers' income." data-ta="இந்த திட்டம் உணவுப் பாதுகாப்பு மற்றும் விவசாயிகளின் வருமானத்தை மேம்படுத்துவதை நோக்கமாகக் கொண்டுள்ளது.">
+    This scheme aims to increase pulse production and productivity, enhancing food security and farmers' income.
+</p>
+<button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+    Learn More
+</button>     
+    </div>
+<div class="card" style="float: right; margin-left: 20px;">
+  <h3 data-en="Scheme 21: The NADP - Paddy scheme " data-ta="திட்டம் 21:NADP - நெல் திட்டம் ">Scheme 21: The NADP - Paddy scheme 
+</h3>
+  <p data-en="This scheme aims to increase paddy production and productivity by providing subsidies to farmers for machine transplanting ." data-ta="இந்த திட்டம் இயந்திர நாற்றுக்கு மானியம் வழங்குவதன் மூலம் நெல் உற்பத்தி மற்றும் உற்பத்தித்திறனை அதிகரிப்பதை நோக்கமாகக் கொண்டுள்ளது. ">
+      This scheme aims to increase paddy production and productivity by providing subsidies to farmers for machine transplanting. 
+  </p>
+  <button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+      Learn More
+  </button>
+</div>
+<div class="card" style="float: left; margin-right: 20px;">
+<h3 data-en="Scheme 22: (NFSM) Rice scheme India." data-ta="திட்டம் 22:(NFSM) அரிசித் திட்டம் ">Scheme 22:  (NFSM) Rice scheme India. 
+</h3>
+<p data-en="This scheme aims to increase rice production and productivity through sustainable practices." data-ta="இந்த திட்டம் நீடித்த நடைமுறைகள் மூலம் அரிசி உற்பத்தி மற்றும் உற்பத்தித் திறனை அதிகரிப்பதை நோக்கமாகக் கொண்டுள்ளது.">
+    This scheme aims to increase rice production and productivity through sustainable practices.
+</p>
+<button onclick="window.location.href='https://example.com/farmers-subsidy-details';" data-en="Learn More" data-ta="மேலும் அறிய">
+    Learn More
+</button>     
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Scheme Guidance. All rights reserved.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>
